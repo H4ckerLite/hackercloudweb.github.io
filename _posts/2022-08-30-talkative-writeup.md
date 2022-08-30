@@ -30,6 +30,18 @@ PORT     STATE SERVICE         REASON
 8082/tcp open  blackice-alerts syn-ack ttl 62
 ```
 
+~~~
+Explicación:
+   -sS: TCP SYN port scan
+   -p-: todo el rango de puertos (0-65535)
+   --open: filtrar por puertos con status open
+   --min-rate 5000: que envie como mínimo 5000 por segundo
+   -vvv: para que te reporte los puertos abiertos antes de que termine el escaneo
+   -n: para que no te aplique resolución DNS
+   -Pn: para que no te aplique resolución de hosts através del protocolo de resolución de direcciones (ARP)
+   -oG:  para que te exporte la información en formato grepeable
+~~~
+
 Como está el puerto 80 abierto podemos ir directamente a la web pero nos redirige a un dominio, esto lo podemos comprobar con curl
 
 ```html
