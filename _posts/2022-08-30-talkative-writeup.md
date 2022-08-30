@@ -4,7 +4,6 @@ author: HackerCloud
 date: 2022-08-30 00:00:00 +0800
 categories: [Hackthebox, machine, writeup]
 tags: [Hackthebox, writeup]
-pin: false
 image:
   path: ../../assets/img/commons/talkative-writeup/Talkative.png
   width: 800
