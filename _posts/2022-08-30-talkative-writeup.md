@@ -6,10 +6,10 @@ categories: [Hackthebox, machine, writeup]
 tags: [Hackthebox, writeup]
 pin: false
 image:
-	 ../../assets/img/commons/talkative-writeup/Talkative.png
-	 width: 800
-	 height: 500
-	 alt: Banner Talkative
+  path: ../../assets/img/commons/talkative-writeup/Talkative.png
+  width: 800
+  height: 500
+  alt: Banner Talkative
 ---
 
 Empezamos con el escaneo de nmap sobre los puertos de la máquina
