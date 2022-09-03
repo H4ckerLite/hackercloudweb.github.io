@@ -83,9 +83,9 @@ specials = '!$%&'
 
 all = chars_uppercase+nums+chars+specials
 
-pass_gen = ''.join(
+final_pass = ''.join(
     choice(all) for i in range(60)
 )
 
-print(pass_gen)
+print(final_pass)
 ```
