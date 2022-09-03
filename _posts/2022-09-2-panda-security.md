@@ -11,7 +11,7 @@ image:
   alt: Banner Panda Security
 ---
 
-Antes de empezar deciros que esto es un entorno de pruebas en local, panda security es un antivirus muy bueno para las personas que no saben se ciberseguridad y quieren estar protegidos, en este artículo lo que más importa es el último párrafo.
+Antes de empezar deciros que esto es un entorno de pruebas en local, panda security es un antivirus muy bueno para las personas que no saben de ciberseguridad y quieren estar protegidos, en este artículo lo que más importa es el último párrafo.
 
 Para empezar tenemos que enumerar los equipos que están en nuestro segmento de red, para eso usaremos el parámetro `-sP` de nmap
 
@@ -133,14 +133,12 @@ No vemos nada con ninguna de las 3 herramientas, podemos seguir por el puerto RP
 ❯ rpcclient -U "" 192.168.1.20 -N -c "enumdomusers" | grep -oP '\[.*?\]' | sort -u | tr -d '[]'
 ```
 
-Nos da dos usuarios, el usuario Administrador y el usuario user, podemos probar a conectarnos por winrm usando de contraseña el usuario
+Nos da dos usuarios, el usuario Administrador y el usuario user, podemos probar a conectarnos por winrm usando de contraseña el usuario ya que el puerto winrm está abierto
 
 ```powershell
 ❯ evil-winrm -i 192.168.1.20 -u 'user' -p 'user'
 
 Evil-WinRM shell v3.4
-
-Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
 
 Data: For more information, check Evil-WinRM Github: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
 
